@@ -1,0 +1,1516 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materi Alat Tes Inventori</title>
+  <meta name="description" content="Materi kuliah Inventori (IT-051255): administrasi, skoring, dan interpretasi RMIB, EPPS, PAPI Kostick, DISC, Holland RIASEC, MBTI, PSI, EIS, HEXACO, ASRI, ESLI, dan YA-SSI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@1,62..125,400..700&family=Inter+Tight:ital,wght@0,300..700;1,300..700&family=Inter:wght@400;500;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' fill='%23c8f169' stroke='%231c1c1c' stroke-width='2'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-size='22' font-family='Georgia' font-style='italic' fill='%231f22c9'%3E%CE%A8%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ SVG ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="cdg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ececf4"/><stop offset=".38" stop-color="#b9f3ff"/><stop offset=".62" stop-color="#ffd1f0"/><stop offset="1" stop-color="#d4d4de"/>
+    </linearGradient>
+  </defs>
+  <symbol id="i-folder" viewBox="0 0 32 32"><path d="M2 7h10l3 3h15v18H2z" fill="#f2c443" stroke="#1c1c1c" stroke-width="1.5" stroke-linejoin="round"/><path d="M2 13h28v15H2z" fill="#ffd968" stroke="#1c1c1c" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-floppy" viewBox="0 0 32 32"><path d="M3 3h22l4 4v22H3z" fill="#2b33d6" stroke="#1c1c1c" stroke-width="1.5"/><rect x="8" y="3" width="14" height="9" fill="#d9d9d9" stroke="#1c1c1c" stroke-width="1.5"/><rect x="17" y="5" width="3" height="5" fill="#2b33d6"/><rect x="7" y="17" width="18" height="12" fill="#fff" stroke="#1c1c1c" stroke-width="1.5"/><path d="M10 21h12M10 25h9" stroke="#9aa6a0" stroke-width="1.5"/></symbol>
+  <symbol id="i-cd" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" fill="url(#cdg)" stroke="#1c1c1c" stroke-width="1.5"/><circle cx="16" cy="16" r="4" fill="#fff" stroke="#1c1c1c" stroke-width="1.5"/><path d="M9 11a9 9 0 0 1 6-4" stroke="#fff" stroke-width="2" fill="none"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 32 32"><rect x="3" y="7" width="26" height="18" fill="#f4f4ea" stroke="#1c1c1c" stroke-width="1.5"/><path d="M3 7l13 10L29 7" fill="none" stroke="#1c1c1c" stroke-width="1.5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 32 32"><rect x="1" y="1" width="30" height="30" fill="#c6e8f2" stroke="#1c1c1c" stroke-width="1.5"/><circle cx="14" cy="13" r="7" fill="#fff" stroke="#1c1c1c" stroke-width="2"/><path d="M19 18l7 7" stroke="#1c1c1c" stroke-width="3"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 32 32"><rect x="1" y="1" width="30" height="30" fill="#e6e6e6" stroke="#1c1c1c" stroke-width="1.5"/><path d="M8 24l2-6 12-12 4 4-12 12z" fill="#f2c443" stroke="#1c1c1c" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 24l2-6 4 4z" fill="#f5deb3" stroke="#1c1c1c" stroke-width="1.2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-info" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="#2b33d6" stroke="#fff" stroke-width="2"/><circle cx="16" cy="16" r="15.2" fill="none" stroke="#1c1c1c" stroke-width="1"/><rect x="14" y="13" width="4" height="11" fill="#fff"/><rect x="14" y="7" width="4" height="4" fill="#fff"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 32 32"><path d="M6 2h14l6 6v22H6z" fill="#fff" stroke="#1c1c1c" stroke-width="1.5" stroke-linejoin="round"/><path d="M20 2v6h6" fill="#ddd" stroke="#1c1c1c" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 14h12M10 18h12M10 22h8" stroke="#2b33d6" stroke-width="1.5"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 32 32"><path d="M16 3l14 25H2z" fill="#f2c443" stroke="#1c1c1c" stroke-width="1.5" stroke-linejoin="round"/><rect x="14.5" y="11" width="3" height="9" fill="#1c1c1c"/><rect x="14.5" y="22" width="3" height="3" fill="#1c1c1c"/></symbol>
+  <symbol id="i-cursor" viewBox="0 0 32 32"><path d="M8 3v22l6-5 4 9 4-2-4-9h8z" fill="#fff" stroke="#1c1c1c" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-psi" viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" fill="#c8f169" stroke="#1c1c1c" stroke-width="1.5"/><text x="16" y="24" text-anchor="middle" font-size="22" font-family="Georgia, serif" font-style="italic" fill="#1f22c9">&#936;</text></symbol>
+  <symbol id="i-chart" viewBox="0 0 32 32"><rect x="2" y="3" width="28" height="26" fill="#fff" stroke="#1c1c1c" stroke-width="1.5"/><rect x="7" y="16" width="4" height="9" fill="#2b33d6"/><rect x="14" y="10" width="4" height="15" fill="#c8f169" stroke="#1c1c1c"/><rect x="21" y="13" width="4" height="12" fill="#2b33d6"/></symbol>
+  <symbol id="i-book" viewBox="0 0 32 32"><path d="M4 5h11v22H4z" fill="#c8f169" stroke="#1c1c1c" stroke-width="1.5"/><path d="M17 5h11v22H17z" fill="#fff" stroke="#1c1c1c" stroke-width="1.5"/><path d="M15 5h2v22h-2z" fill="#1c1c1c"/><path d="M20 10h5M20 14h5M20 18h4" stroke="#2b33d6" stroke-width="1.4"/></symbol>
+  <symbol id="i-quiz" viewBox="0 0 32 32"><rect x="2" y="4" width="28" height="24" fill="#fff" stroke="#1c1c1c" stroke-width="1.5"/><rect x="2" y="4" width="28" height="6" fill="#2b33d6" stroke="#1c1c1c" stroke-width="1.5"/><path d="M9 19l4 4 9-9" fill="none" stroke="#2e8b3d" stroke-width="3"/></symbol>
+  <symbol id="i-min" viewBox="0 0 12 12"><rect x="2" y="8" width="8" height="2" fill="#1c1c1c"/></symbol>
+  <symbol id="i-max" viewBox="0 0 12 12"><rect x="2" y="2" width="8" height="8" fill="none" stroke="#1c1c1c" stroke-width="1.6"/><rect x="2" y="2" width="8" height="2.4" fill="#1c1c1c"/></symbol>
+  <symbol id="i-close" viewBox="0 0 12 12"><path d="M2 2l8 8M10 2l-8 8" stroke="#1c1c1c" stroke-width="1.8"/></symbol>
+</svg>
+
+<!-- ============ WALLPAPER ============ -->
+<div class="wallpaper" aria-hidden="true">
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="cloud c4"></div><div class="cloud c5"></div>
+  <div class="grass"></div>
+</div>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="chapter hero" id="beranda" data-title="Beranda">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>00</b>Materi Inventori (IT-051255) · Psikologi Universitas Gunadarma<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bagian"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bagian"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bagian"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+
+    <div class="chapter-body">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">MATERI KULIAH</p>
+          <h1>Alat Tes<br><span class="hl">Inventori</span></h1>
+          <p class="hero-sub">Administrasi, Skoring, dan Interpretasi</p>
+          <ul class="hero-meta">
+            <li>IT-051255</li><li>Rumpun Psikodiagnostika</li><li>Semester 5</li>
+          </ul>
+          <div class="loader" aria-hidden="true">
+            <div class="loader-label"><span>MEMUAT 12 ALAT TES…</span><span id="loadPct">0%</span></div>
+            <div class="prog"><div class="prog-fill" id="heroProg"></div></div>
+          </div>
+          <div class="hero-actions">
+            <a class="bevel-btn start-btn" href="#konsep"><svg><use href="#i-psi"/></svg>Mulai Belajar<svg class="cursor"><use href="#i-cursor"/></svg></a>
+            <a class="bevel-btn start-btn" href="#kuis"><svg><use href="#i-quiz"/></svg>Kuis</a>
+          </div>
+        </div>
+
+        <div class="hero-collage" aria-hidden="true">
+          <div class="pix pix-cream hc-a">
+            <div class="pix-in">
+              <div class="sheet">
+                <div class="sheet-head"><span>LEMBAR JAWABAN</span><span>A / B</span></div>
+                <div class="sheet-row"><span>1</span><i class="bub on">A</i><i class="bub">B</i></div>
+                <div class="sheet-row"><span>2</span><i class="bub">A</i><i class="bub on">B</i></div>
+                <div class="sheet-row"><span>3</span><i class="bub">A</i><i class="bub on">B</i></div>
+                <div class="sheet-row"><span>4</span><i class="bub on">A</i><i class="bub">B</i></div>
+                <div class="sheet-row"><span>5</span><i class="bub">A</i><i class="bub on">B</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="pix pix-sky hc-b">
+            <div class="pix-in"><svg id="heroHex" class="hex-svg" viewBox="0 0 220 210"></svg></div>
+          </div>
+          <div class="pix pix-lilac hc-c">
+            <div class="pix-in"><svg id="heroWheel" class="wheel-svg" viewBox="0 0 360 360"></svg></div>
+          </div>
+          <p class="lede">12 alat tes, format normatif dan ipsatif, lengkap dengan langkah skoring dan contoh tafsiran.</p>
+          <svg class="float-ico f1"><use href="#i-floppy"/></svg>
+          <svg class="float-ico f2"><use href="#i-cd"/></svg>
+          <svg class="float-ico f3"><use href="#i-pencil"/></svg>
+        </div>
+      </div>
+
+      <div class="w98 explorer" style="margin-top:40px">
+        <div class="w98-bar"><h2 class="w98-title">Penjelajah — C:\Materi\Inventori</h2><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="addr" aria-hidden="true"><svg class="ico" style="width:16px;height:16px"><use href="#i-folder"/></svg>C:\Materi\Inventori\</div>
+        <div class="w98-body white">
+          <ul class="icon-grid">
+            <li><a href="#konsep"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>Konsep Dasar</span><small>BAB 01</small></a></li>
+            <li><a href="#rmib"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>RMIB</span><small>BAB 02</small></a></li>
+            <li><a href="#epps"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>EPPS</span><small>BAB 03</small></a></li>
+            <li><a href="#papi"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>PAPI Kostick</span><small>BAB 04</small></a></li>
+            <li><a href="#disc"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>DISC</span><small>BAB 05</small></a></li>
+            <li><a href="#holland"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>Holland RIASEC</span><small>BAB 06</small></a></li>
+            <li><a href="#mbti"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>MBTI</span><small>BAB 07</small></a></li>
+            <li><a href="#lain"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>PSI · EIS · HEXACO</span><small>BAB 08</small></a></li>
+            <li><a href="#asri"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>ASRI</span><small>BAB 09</small></a></li>
+            <li><a href="#esli"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>ESLI</span><small>BAB 10</small></a></li>
+            <li><a href="#yassi"><svg class="ico ico-lg"><use href="#i-folder"/></svg><span>YA-SSI</span><small>BAB 11</small></a></li>
+            <li><a href="#lapangan"><svg class="ico ico-lg"><use href="#i-chart"/></svg><span>Data Lapangan</span><small>BAB 12</small></a></li>
+            <li><a href="#ringkasan"><svg class="ico ico-lg"><use href="#i-doc"/></svg><span>Ringkasan</span><small>BAB 13</small></a></li>
+            <li><a href="#pustaka"><svg class="ico ico-lg"><use href="#i-book"/></svg><span>Daftar Pustaka</span><small>REF</small></a></li>
+            <li><a href="#kuis"><svg class="ico ico-lg"><use href="#i-quiz"/></svg><span>Kuis.exe</span><small>LATIHAN</small></a></li>
+          </ul>
+        </div>
+        <div class="status-bar" aria-hidden="true"><span>15 objek</span><span>RPS Fakultas Psikologi UG, revisi September 2023</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 1 KONSEP DASAR ================= -->
+<section class="chapter" id="konsep" data-title="01 · Konsep Dasar Inventori">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>01</b>Konsep Dasar Inventori<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 01</p>
+          <h2 class="display"><span class="line">Konsep</span><span class="line"><span class="hl">Dasar</span> Inventori</span></h2>
+        </div>
+        <p class="lede">Laporan diri tentang minat, kebutuhan, sikap, atau kecenderungan perilaku. Tidak ada jawaban benar atau salah.</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="note with-icon">
+            <svg class="badge-icon"><use href="#i-info"/></svg>
+            <p>Inventori adalah instrumen asesmen berbentuk <strong>laporan diri (self-report)</strong>. Responden menilai sejumlah pernyataan tentang minat, kebutuhan, sikap, atau kecenderungan perilakunya sendiri. Inventori tidak memiliki jawaban benar atau salah.</p>
+            <p>Karena itu, inventori termasuk <strong>tes performa tipikal</strong>, berbeda dengan tes inteligensi atau bakat yang mengukur <strong>performa maksimal</strong> (Urbina, 2004). Skor inventori menggambarkan kecenderungan seseorang, bukan tingkat kemampuannya.</p>
+          </div>
+          <div class="facts">
+            <div class="fact"><b>Tipikal</b><span>Inventori: apa yang biasanya dilakukan atau disukai seseorang (kecenderungan).</span></div>
+            <div class="fact"><b>Maksimal</b><span>Tes inteligensi/bakat: seberapa baik seseorang dapat melakukan sesuatu (kemampuan).</span></div>
+            <div class="fact"><b>0</b><span>Jawaban benar atau salah pada inventori.</span></div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="w98">
+            <div class="w98-bar"><h3>1.1 Normatif.exe</h3><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+            <div class="w98-body white">
+              <p>Format normatif meminta responden <strong>menilai setiap aitem secara terpisah</strong>, misalnya dengan skala Likert atau pilihan benar-salah. Skor satu aspek tidak bergantung pada aspek lain, sehingga skor individu dapat dibandingkan dengan norma kelompok.</p>
+              <ul class="chips"><li>HEXACO-PI-R</li><li>PSI</li><li>ASRI</li><li>ESLI</li><li>YA-SSI</li><li>PAPI-N</li></ul>
+            </div>
+          </div>
+          <div class="w98">
+            <div class="w98-bar"><h3>1.1 Ipsatif.exe</h3><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+            <div class="w98-body white">
+              <p>Format ipsatif memakai <strong>pilihan paksa (forced choice) atau peringkat</strong>. Responden memilih satu dari dua atau lebih pernyataan, atau mengurutkan beberapa pilihan. Jumlah skor total selalu tetap. Akibatnya, skor tinggi pada satu aspek otomatis menurunkan aspek lain.</p>
+              <p>Skor ipsatif cocok untuk membandingkan aspek di dalam diri satu orang (intraindividual), tetapi kurang tepat untuk perbandingan antarindividu dan analisis statistik korelasional biasa. Format ini dipakai karena mampu menekan bias keinginan sosial (social desirability).</p>
+              <ul class="chips lime"><li>RMIB</li><li>EPPS</li><li>PAPI-I</li><li>DISC</li><li>EIS</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">1.1</span>Perbandingan Format Normatif dan Ipsatif</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="tbl-wrap">
+              <table class="tbl">
+                <thead><tr><th scope="col">Ciri</th><th scope="col">Normatif</th><th scope="col">Ipsatif</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Bentuk respons</th><td>Skala nilai per aitem (Likert, benar-salah)</td><td>Pilihan paksa atau peringkat</td></tr>
+                  <tr><th scope="row">Total skor</th><td>Bervariasi antarresponden</td><td>Selalu tetap (misalnya 90 pada PAPI-I, 702 pada RMIB)</td></tr>
+                  <tr><th scope="row">Perbandingan</th><td>Antarindividu dengan norma</td><td>Intraindividu (profil di dalam diri)</td></tr>
+                  <tr><th scope="row">Kelebihan</th><td>Analisis statistik lebih leluasa</td><td>Menekan bias keinginan sosial dan respons seragam</td></tr>
+                  <tr><th scope="row">Keterbatasan</th><td>Rentan bias jawaban sosial</td><td>Skor saling bergantung, reliabilitas dan validitas sulit dihitung</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">1.2</span>Prinsip Administrasi Umum</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <p>Setiap administrasi inventori mengikuti urutan yang sama:</p>
+            <ol class="steps">
+              <li>Penguji menyiapkan ruang yang tenang, lembar soal, lembar jawaban, dan alat tulis.</li>
+              <li>Penguji membangun <strong>rapport</strong>, menjelaskan tujuan tes secara jujur, dan menegaskan bahwa tidak ada jawaban benar atau salah.</li>
+              <li>Penguji membacakan <strong>instruksi baku</strong> tanpa menambah tafsiran.</li>
+              <li>Penguji memeriksa kelengkapan identitas dan jawaban sebelum lembar dikumpulkan.</li>
+            </ol>
+            <p class="callout"><strong>Kode Etik.</strong> Seluruh proses tunduk pada Kode Etik Psikologi Indonesia, terutama soal kerahasiaan data, kompetensi pemakai tes, dan penyampaian hasil secara bertanggung jawab (HIMPSI, 2010).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 2 RMIB ================= -->
+<section class="chapter" id="rmib" data-title="02 · RMIB">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>02</b>Rothwell-Miller Interest Blank (RMIB)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 02 · RMIB</p>
+          <h2 class="display"><span class="line">Rothwell-Miller</span><span class="line"><span class="hl">Interest</span> Blank</span></h2>
+        </div>
+        <p class="lede">Mengukur minat terhadap 12 kelompok pekerjaan lewat peringkat. Format ipsatif, total skor selalu 702.</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">2.1</span>Sejarah dan Dasar Teori</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p>RMIB berawal dari karya <strong>J. W. Rothwell</strong> di Australia pada 1947. <strong>Kenneth M. Miller</strong> kemudian mengembangkannya di Inggris pada 1958 dan merevisinya beberapa kali, terakhir pada 1994 (Miller, Tyler, &amp; Rothwell, 1994).</p>
+              <p>RMIB mengukur minat terhadap kelompok pekerjaan. Asumsinya, orang yang memiliki minat sesuai bidang kerjanya akan lebih puas dan bertahan lebih lama.</p>
+              <p>Carless dan Fallon (2002) menemukan bahwa kategori minat RMIB berkaitan dengan kemampuan tertentu, misalnya minat <em>computational</em> dengan kemampuan numerik.</p>
+            </div>
+          </div>
+          <div class="facts">
+            <div class="fact"><b>1947</b><span>J. W. Rothwell, Australia</span></div>
+            <div class="fact"><b>1958</b><span>Dikembangkan K. M. Miller di Inggris</span></div>
+            <div class="fact"><b>1994</b><span>Revisi terakhir (Miller, Tyler, &amp; Rothwell)</span></div>
+            <div class="fact"><b>12</b><span>Kategori minat jabatan</span></div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">2.2</span>Aspek yang Diukur — 12 Kategori Minat</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="cat-grid">
+              <div class="cat"><span class="code">Out</span><strong>Outdoor</strong><small>Kegiatan di luar ruangan, alam, pertanian</small></div>
+              <div class="cat"><span class="code">Me</span><strong>Mechanical</strong><small>Mesin, alat, dan perbaikan teknis</small></div>
+              <div class="cat"><span class="code">Comp</span><strong>Computational</strong><small>Angka, hitungan, dan data kuantitatif</small></div>
+              <div class="cat"><span class="code">Sci</span><strong>Scientific</strong><small>Penelitian, analisis, dan penemuan ilmiah</small></div>
+              <div class="cat"><span class="code">Pers</span><strong>Personal Contact</strong><small>Interaksi, persuasi, dan pelayanan langsung</small></div>
+              <div class="cat"><span class="code">Aesth</span><strong>Aesthetic</strong><small>Seni rupa, desain, dan karya visual</small></div>
+              <div class="cat"><span class="code">Lit</span><strong>Literary</strong><small>Membaca, menulis, dan bahasa</small></div>
+              <div class="cat"><span class="code">Mus</span><strong>Musical</strong><small>Bermain, mencipta, atau menikmati musik</small></div>
+              <div class="cat"><span class="code">S.S</span><strong>Social Service</strong><small>Membantu dan menyejahterakan orang lain</small></div>
+              <div class="cat"><span class="code">Cler</span><strong>Clerical</strong><small>Administrasi, arsip, dan pekerjaan kantor rutin</small></div>
+              <div class="cat"><span class="code">Prac</span><strong>Practical</strong><small>Kerja tangan, keterampilan praktis, kerajinan</small></div>
+              <div class="cat"><span class="code">Med</span><strong>Medical</strong><small>Kesehatan, pengobatan, dan perawatan</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">2.3</span>Administrasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="facts" style="margin-bottom:14px">
+                <div class="fact"><b>9</b><span>Daftar (A sampai I)</span></div>
+                <div class="fact"><b>12</b><span>Pekerjaan per daftar, satu dari tiap kategori</span></div>
+                <div class="fact"><b>15–20'</b><span>Tanpa batas waktu, umumnya selesai 15–20 menit</span></div>
+              </div>
+              <p>Tersedia formulir untuk <strong>laki-laki dan perempuan</strong>. Responden memberi angka <strong>1</strong> pada pekerjaan yang paling disukai sampai <strong>12</strong> pada yang paling tidak disukai. Setiap angka hanya boleh dipakai sekali dalam satu daftar.</p>
+              <p>Responden menilai berdasarkan <strong>minat</strong>, bukan gaji, gengsi, atau peluang kerja. Di akhir lembar, responden menuliskan <strong>tiga pekerjaan</strong> yang paling ingin dijalani.</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">2.4</span>Skoring</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <ol class="steps">
+                <li>Periksa setiap daftar. Angka 1 sampai 12 harus muncul tepat satu kali. Jumlah angka per daftar wajib <strong>78</strong>.</li>
+                <li>Salin angka peringkat ke lembar skoring. Urutan kategori pada setiap daftar bergeser satu posisi dari daftar sebelumnya. Lembar skoring baku sudah menyesuaikan pergeseran ini, sehingga angka tersalin secara <strong>diagonal</strong> dan setiap baris mewakili satu kategori.</li>
+                <li>Jumlahkan angka per baris untuk memperoleh skor total tiap kategori. Rentang skor kategori <strong>9 sampai 108</strong>.</li>
+                <li>Periksa jumlah seluruh kategori. Hasilnya harus <strong>702</strong> (9 daftar × 78). Bila tidak 702, ada kesalahan penyalinan.</li>
+                <li>Beri peringkat kategori. Skor total terkecil mendapat peringkat 1 (paling diminati). Skor terbesar mendapat peringkat 12. Skor kembar mendapat rata-rata peringkat, misalnya dua kategori di posisi 4 dan 5 sama-sama mendapat 4,5.</li>
+                <li>Bandingkan tiga peringkat teratas dengan tiga pekerjaan pilihan responden untuk menilai konsistensi minat.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">2.5</span>Contoh Perhitungan</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="tbl-wrap">
+              <table class="tbl compact">
+                <thead><tr><th scope="col">Kategori</th><th>Out</th><th>Me</th><th>Comp</th><th>Sci</th><th>Pers</th><th>Aesth</th><th>Lit</th><th>Mus</th><th>S.S</th><th>Cler</th><th>Prac</th><th>Med</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Skor total</th><td class="num">20</td><td class="num">85</td><td class="num">70</td><td class="num">35</td><td class="num">48</td><td class="num">62</td><td class="num">40</td><td class="num">95</td><td class="num">30</td><td class="num">58</td><td class="num">80</td><td class="num">79</td></tr>
+                  <tr><th scope="row">Peringkat</th><td class="num"><b>1</b></td><td class="num">11</td><td class="num">8</td><td class="num"><b>3</b></td><td class="num">5</td><td class="num">7</td><td class="num">4</td><td class="num">12</td><td class="num"><b>2</b></td><td class="num">6</td><td class="num">10</td><td class="num">9</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="margin-top:14px">Jumlah skor kategori <strong>702</strong>, sehingga penyalinan benar. Minat terkuat responden ada pada <strong>Outdoor, Social Service, dan Scientific</strong>. Minat terlemah ada pada <strong>Musical, Mechanical, dan Practical</strong>. Arah rekomendasi karier mengarah pada bidang yang menggabungkan kerja lapangan, pelayanan sosial, dan kajian ilmiah, misalnya penyuluh lingkungan atau peneliti kesehatan masyarakat.</p>
+
+            <div class="w98" style="margin-top:18px">
+              <div class="w98-bar"><span class="w98-title">Kalkulator_RMIB.exe — coba sendiri</span><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+              <div class="w98-body">
+                <p style="font-size:14px">Masukkan skor total tiap kategori (9–108). Peringkat dihitung otomatis, skor kembar mendapat rata-rata peringkat.</p>
+                <div class="calc-grid" id="rmibInputs"></div>
+                <div class="btn-row">
+                  <button class="bevel-btn" type="button" id="rmibExample">Isi contoh</button>
+                  <button class="bevel-btn" type="button" id="rmibReset">Kosongkan</button>
+                </div>
+                <div class="result" id="rmibResult" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">2.6</span>Interpretasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="grid-3">
+              <div class="fact"><b>1–3</b><span>Peringkat yang menunjukkan minat menonjol</span></div>
+              <div class="fact"><b>10–12</b><span>Peringkat bidang yang cenderung ditolak</span></div>
+              <div class="fact"><b>58,5</b><span>Rata-rata skor kategori (702 ÷ 12)</span></div>
+            </div>
+            <p style="margin-top:14px">Skor yang <strong>jauh di bawah 58,5</strong> menandakan minat kuat, sedangkan skor yang mendekati 58,5 pada banyak kategori menandakan <strong>profil datar</strong> atau minat yang belum terdiferensiasi.</p>
+            <p class="callout"><strong>Ingat:</strong> hasil RMIB sebaiknya dipadukan dengan data kemampuan, karena minat tinggi tidak menjamin kemampuan yang memadai.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 3 EPPS ================= -->
+<section class="chapter" id="epps" data-title="03 · EPPS">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>03</b>Edwards Personal Preference Schedule (EPPS)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 03 · EPPS</p>
+          <h2 class="display"><span class="line">Edwards Personal</span><span class="line"><span class="hl">Preference</span> Schedule</span></h2>
+        </div>
+        <p class="lede">225 pasang pernyataan pilihan paksa untuk mengukur 15 kebutuhan manifes Murray.</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">3.1</span>Sejarah dan Dasar Teori</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p><strong>Allen L. Edwards</strong> menerbitkan EPPS pada 1953 dan merevisinya pada 1959. EPPS berpijak pada teori <strong>kebutuhan manifes (manifest needs)</strong> dari Henry A. Murray (1938). Murray memandang perilaku sebagai upaya memenuhi kebutuhan psikologis.</p>
+              <p>Edwards memilih format <strong>pilihan paksa</strong> karena aitem dalam setiap pasangan sudah disetarakan tingkat keinginan sosialnya. Dengan cara ini, responden tidak dapat sekadar memilih pernyataan yang terdengar baik (Domino &amp; Domino, 2006).</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">3.3</span>Administrasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="facts" style="margin-bottom:14px">
+                <div class="fact"><b>225</b><span>Pasang pernyataan (A dan B)</span></div>
+                <div class="fact"><b>40–55'</b><span>Waktu pengerjaan</span></div>
+              </div>
+              <p>Responden memilih satu pernyataan yang lebih menggambarkan dirinya, lalu menandai huruf A atau B di lembar jawaban. <strong>Semua nomor wajib dijawab.</strong></p>
+              <p>Penguji perlu menekankan bahwa responden harus memilih walaupun kedua pernyataan terasa sama-sama cocok atau sama-sama tidak cocok.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">3.2</span>Aspek yang Diukur — 15 Kebutuhan</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="tbl-wrap">
+              <table class="tbl">
+                <thead><tr><th scope="col">No</th><th scope="col">Kebutuhan</th><th scope="col">Kode</th><th scope="col">Gambaran skor tinggi</th></tr></thead>
+                <tbody id="eppsNeedsBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">3.4–3.5</span>Struktur Lembar Jawaban &amp; Skoring Skor Kebutuhan</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="grid-2">
+              <div>
+                <h4>Struktur lembar jawaban</h4>
+                <p>Lembar jawaban berbentuk <strong>matriks 15 baris × 15 kolom</strong>. Setiap baris dan kolom mewakili satu kebutuhan dengan urutan seperti tabel 3.2. Setiap kebutuhan dipasangkan dua kali dengan masing-masing dari 14 kebutuhan lain, sehingga ada <strong>210 pasangan berbeda</strong>.</p>
+                <p>Sisanya, <strong>15 pasangan</strong>, merupakan pengulangan untuk mengukur konsistensi. Sel pengulangan ini menempati <strong>diagonal</strong> matriks dan tidak dihitung dalam skor kebutuhan. Skor mentah maksimal setiap kebutuhan adalah <strong>28</strong>.</p>
+                <h4>Langkah skoring</h4>
+                <ol class="steps">
+                  <li>Untuk kebutuhan nomor k, hitung jumlah jawaban <strong>A pada baris ke-k</strong> (abaikan sel diagonal). Hasilnya skor baris (r).</li>
+                  <li>Hitung jumlah jawaban <strong>B pada kolom ke-k</strong> (abaikan sel diagonal). Hasilnya skor kolom (c).</li>
+                  <li>Skor mentah kebutuhan = <strong>r + c</strong>. Rentangnya 0 sampai 28.</li>
+                  <li>Ulangi untuk ke-15 kebutuhan. Jumlah seluruh skor mentah harus <strong>210</strong>. Bila tidak 210, ulangi penghitungan.</li>
+                  <li>Ubah skor mentah menjadi <strong>persentil</strong> dengan tabel norma yang sesuai jenis kelamin dan kelompok sampel.</li>
+                </ol>
+              </div>
+              <div class="pix pix-lime">
+                <div class="pix-in">
+                  <div class="need-select">
+                    <label for="eppsSel" style="font-family:var(--f-pixel);font-size:11px">PILIH KEBUTUHAN:</label>
+                    <select id="eppsSel" class="sel"></select>
+                  </div>
+                  <div class="matrix-wrap"><div class="matrix" id="eppsMatrix" role="img" aria-label="Matriks lembar jawaban EPPS 15 x 15"></div></div>
+                  <div class="legend">
+                    <span><i style="background:var(--lime)"></i>Baris k → hitung A (r)</span>
+                    <span><i style="background:#b9c8ff"></i>Kolom k → hitung B (c)</span>
+                    <span><i style="background:repeating-linear-gradient(45deg,#d9d9d9 0 3px,#fff 3px 6px)"></i>Diagonal (konsistensi)</span>
+                  </div>
+                  <p class="pix-cap" id="eppsCap" aria-live="polite"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">3.6</span>Skor Konsistensi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p>Skor konsistensi memeriksa apakah responden menjawab dengan sungguh-sungguh. Bandingkan jawaban pada 15 pasangan nomor berikut. <strong>Beri skor 1 bila kedua jawaban sama.</strong></p>
+              <div class="pairs">
+                <span>1–151</span><span>7–157</span><span>13–163</span><span>19–169</span><span>25–175</span>
+                <span>26–101</span><span>32–107</span><span>38–113</span><span>44–119</span><span>50–125</span>
+                <span>51–201</span><span>57–207</span><span>63–213</span><span>69–219</span><span>75–225</span>
+              </div>
+              <p style="margin-top:14px">Rentang skor konsistensi <strong>0 sampai 15</strong>. Edwards (1959) menetapkan skor <strong>11 atau lebih</strong> sebagai konsisten, karena peluang responden yang menjawab acak mencapai angka tersebut sangat kecil. Skor di bawah 11 menandakan hasil perlu ditafsirkan dengan hati-hati atau tes perlu diulang.</p>
+              <p>Edwards juga menyediakan <strong>indeks stabilitas profil</strong>, yaitu korelasi antara skor baris dan skor kolom dari 15 kebutuhan.</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">3.7</span>Contoh dan Interpretasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p>Seorang responden memiliki <strong>9 jawaban A</strong> pada baris Achievement dan <strong>8 jawaban B</strong> pada kolom Achievement. Skor mentah Achievement adalah <strong>17</strong>. Bila tabel norma menempatkan skor 17 pada <strong>persentil 80</strong>, kebutuhan berprestasi responden lebih tinggi dibanding 80 persen kelompok normanya.</p>
+              <p style="margin-bottom:4px">Praktik umum kategori persentil:</p>
+              <div class="scale" aria-hidden="true">
+                <div style="flex:25;background:#ffe3dc">Rendah<br>≤ 25</div>
+                <div style="flex:49;background:#fff">Rata-rata<br>26–74</div>
+                <div style="flex:26;background:var(--lime)">Tinggi<br>&gt; 75</div>
+              </div>
+              <div class="scale-ticks" aria-hidden="true"><span>0</span><span>25</span><span>50</span><span>75</span><span>99</span></div>
+              <p class="sr-only">Persentil di atas 75 tinggi, 26 sampai 74 rata-rata, 25 ke bawah rendah.</p>
+              <p style="margin-top:12px">Karena EPPS bersifat ipsatif, tafsiran utama tetap berfokus pada kebutuhan yang paling menonjol dan paling lemah di dalam profil individu.</p>
+              <p class="callout"><strong>Catatan validitas.</strong> Caputo dkk. (1965) melaporkan bahwa validitas EPPS terhadap kriteria proyektif dan perilaku tergolong terbatas, sehingga hasilnya perlu dikonfirmasi dengan wawancara atau observasi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 4 PAPI ================= -->
+<section class="chapter" id="papi" data-title="04 · PAPI Kostick">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>04</b>PAPI Kostick (Personality and Preference Inventory)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 04 · PAPI</p>
+          <h2 class="display"><span class="line">PAPI</span><span class="line"><span class="hl">Kostick</span></span></h2>
+        </div>
+        <p class="lede">Personality and Preference Inventory: 20 aspek kebutuhan (needs) dan persepsi peran kerja (roles).</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">4.1</span>Sejarah dan Jenis</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p><strong>Max Martin Kostick</strong>, psikolog industri di Massachusetts, menyusun PAPI pada awal 1960-an untuk keperluan seleksi dan pengembangan karyawan. PAPI mengukur dua hal, yaitu <strong>kebutuhan (needs)</strong> dan <strong>persepsi diri tentang peran kerja (roles)</strong>.</p>
+              <p>Sanz dkk. (2006) membuktikan bahwa PAPI-N memiliki konsistensi internal dan validitas konstruk yang memadai, sehingga skornya dapat dibandingkan antarindividu.</p>
+            </div>
+          </div>
+          <div class="grid-2" style="gap:14px">
+            <div class="w98">
+              <div class="w98-bar"><span class="w98-title">PAPI-I</span><span class="w98-btns" aria-hidden="true"><i>×</i></span></div>
+              <div class="w98-body white"><p><strong>Ipsatif.</strong> 90 pasang pernyataan pilihan paksa.</p></div>
+            </div>
+            <div class="w98">
+              <div class="w98-bar"><span class="w98-title">PAPI-N</span><span class="w98-btns" aria-hidden="true"><i>×</i></span></div>
+              <div class="w98-body white"><p><strong>Normatif.</strong> 126 pernyataan dinilai dengan skala lima poin.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">4.2</span>Aspek yang Diukur — 20 Aspek dalam 7 Kelompok</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="tbl-wrap">
+              <table class="tbl compact">
+                <thead><tr><th scope="col">Kode</th><th scope="col">Aspek</th><th scope="col">Jenis</th></tr></thead>
+                <tbody id="papiTableBody"></tbody>
+              </table>
+            </div>
+            <p style="margin-top:10px;font-size:14px"><span class="tag need">Need</span> = kebutuhan &nbsp; <span class="tag role">Role</span> = persepsi peran kerja. Totalnya 10 needs dan 10 roles.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">4.3</span>Administrasi PAPI-I</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p>Responden membaca <strong>90 pasang pernyataan (a dan b)</strong> dan memilih satu yang paling sesuai dengan dirinya <strong>di tempat kerja</strong>. Responden menandai pilihan di lembar jawaban.</p>
+              <p>Waktu pengerjaan berkisar <strong>20 sampai 30 menit</strong>. Penguji mengingatkan agar responden menjawab berdasarkan kenyataan dirinya, bukan gambaran ideal karyawan.</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">4.4</span>Skoring PAPI-I</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <ol class="steps">
+                <li>Setiap pernyataan dalam 90 pasangan mewakili satu dari 20 aspek. Setiap aspek muncul <strong>sembilan kali</strong> di seluruh tes.</li>
+                <li>Gunakan lembar skoring atau kunci yang memetakan setiap pilihan (a atau b) ke kode aspeknya.</li>
+                <li>Hitung berapa kali setiap aspek dipilih. Skor tiap aspek berkisar <strong>0 sampai 9</strong>.</li>
+                <li>Jumlahkan skor seluruh aspek. Hasilnya wajib <strong>90</strong>. Bila tidak 90, ada pilihan yang tertinggal atau salah hitung.</li>
+                <li>Pindahkan skor ke <strong>lingkaran profil PAPI (PAPI wheel)</strong>. Lingkaran memiliki 20 sektor. Titik dekat pusat berarti skor rendah, titik dekat tepi berarti skor tinggi. Hubungkan titik untuk melihat bentuk profil.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="w98">
+          <div class="w98-bar"><span class="w98-title">PAPI_Wheel.exe — ubah skor untuk melihat profil</span><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+          <div class="w98-body">
+            <div class="papi-layout">
+              <div>
+                <div class="papi-inputs" id="papiInputs"></div>
+                <div class="btn-row">
+                  <button class="bevel-btn" type="button" id="papiExample">Contoh pemimpin</button>
+                  <button class="bevel-btn" type="button" id="papiExample2">Contoh pelaksana</button>
+                </div>
+              </div>
+              <div>
+                <div class="pix pix-lilac"><div class="pix-in" style="padding:14px"><svg id="papiWheel" class="wheel-svg" viewBox="0 0 360 360" role="img" aria-label="Lingkaran profil PAPI"></svg></div></div>
+                <div class="result" id="papiResult" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">4.5</span>Interpretasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="scale" aria-hidden="true">
+              <div style="flex:4;background:#ffe3dc">Rendah 0–3</div>
+              <div style="flex:2;background:#fff">Sedang 4–5</div>
+              <div style="flex:4;background:var(--lime)">Tinggi 6–9</div>
+            </div>
+            <p style="margin-top:10px">Banyak lembaga di Indonesia memakai pedoman kategori <strong>0 sampai 3 sebagai rendah, 4 sampai 5 sebagai sedang, dan 6 sampai 9 sebagai tinggi</strong>. Pedoman ini merupakan konvensi praktik, bukan norma statistik.</p>
+            <p>Penafsiran yang baik membaca aspek <strong>secara berkelompok</strong>:</p>
+            <ul class="bullets">
+              <li>Skor <strong>L tinggi</strong> bersama <strong>P tinggi</strong> dan <strong>I tinggi</strong> menggambarkan individu yang mau memimpin, ingin mengarahkan orang lain, dan cepat memutuskan.</li>
+              <li>Sebaliknya, <strong>L rendah</strong> bersama <strong>W tinggi</strong> dan <strong>F tinggi</strong> menggambarkan individu yang lebih nyaman sebagai pelaksana dengan arahan jelas.</li>
+            </ul>
+            <p class="callout">Karena PAPI-I ipsatif, hasilnya lebih tepat untuk memahami pola dalam diri satu kandidat daripada meranking banyak kandidat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 5 DISC ================= -->
+<section class="chapter" id="disc" data-title="05 · DISC">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>05</b>DISC (Dominance, Influence, Steadiness, Compliance)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 05 · DISC</p>
+          <h2 class="display"><span class="line">Model</span><span class="line"><span class="hl">DISC</span> Perilaku</span></h2>
+        </div>
+        <p class="lede">Dominance, Influence, Steadiness, Compliance. Menggambarkan gaya perilaku, bukan kepribadian menyeluruh.</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">5.1</span>Sejarah dan Dasar Teori</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p><strong>William Moulton Marston</strong> memperkenalkan model DISC dalam buku <em>Emotions of Normal People</em> (1928). Marston menjelaskan perilaku berdasarkan dua dimensi, yaitu <strong>persepsi terhadap lingkungan</strong> (bersahabat atau menekan) dan <strong>respons terhadapnya</strong> (aktif atau pasif).</p>
+              <p><strong>Walter V. Clarke</strong> mengubah teori ini menjadi instrumen pada 1950-an. <strong>John Geier</strong> kemudian mengembangkan <em>Personal Profile System</em> pada 1970-an, yang menjadi cikal bakal berbagai versi DISC saat ini (Davis dkk., 2011).</p>
+            </div>
+          </div>
+          <div class="pix pix-cream">
+            <div class="pix-in">
+              <div class="quad">
+                <span></span>
+                <span class="axis">LINGKUNGAN MENEKAN</span>
+                <span class="axis">LINGKUNGAN BERSAHABAT</span>
+                <span class="axis v">RESPONS AKTIF</span>
+                <div class="q q-d"><b>D</b>Dominance<small>Tegas, berorientasi hasil, berani mengambil risiko</small><em>MENEKAN · AKTIF</em></div>
+                <div class="q q-i"><b>I</b>Influence<small>Persuasif, ekspresif, optimis, senang bergaul</small><em>BERSAHABAT · AKTIF</em></div>
+                <span class="axis v">RESPONS PASIF</span>
+                <div class="q q-c"><b>C</b>Compliance<small>Teliti, analitis, taat aturan dan standar</small><em>MENEKAN · PASIF</em></div>
+                <div class="q q-s"><b>S</b>Steadiness<small>Sabar, stabil, loyal, menyukai rutinitas</small><em>BERSAHABAT · PASIF</em></div>
+              </div>
+              <p class="pix-cap">PERSEPSI LINGKUNGAN × RESPONS (MARSTON)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">5.2</span>Administrasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="facts" style="margin-bottom:14px">
+                <div class="fact"><b>24</b><span>Kelompok, masing-masing empat kata sifat</span></div>
+                <div class="fact"><b>10–15'</b><span>Dijawab cepat dan spontan</span></div>
+              </div>
+              <p>Versi yang umum dipakai di Indonesia berisi 24 kelompok. Responden memilih satu kata yang <strong>paling menggambarkan</strong> dirinya (kolom <strong>M</strong> atau Most) dan satu kata yang <strong>paling tidak menggambarkan</strong> dirinya (kolom <strong>L</strong> atau Least).</p>
+              <p>Kata M dan L dalam satu kelompok <strong>tidak boleh sama</strong>.</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">5.3</span>Skoring</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <ol class="steps">
+                <li>Gunakan kunci DISC. Setiap kata dalam kunci memiliki label D, I, S, C, atau tanda bintang (*). Tanda bintang berarti kata tersebut tidak dihitung pada dimensi mana pun.</li>
+                <li>Hitung jumlah pilihan M untuk setiap label (D, I, S, C, *). Jumlah seluruhnya wajib <strong>24</strong>.</li>
+                <li>Hitung jumlah pilihan L untuk setiap label. Jumlah seluruhnya juga wajib <strong>24</strong>.</li>
+                <li>Hitung skor <strong>Change</strong> setiap dimensi dengan rumus <strong>M dikurangi L</strong>. Tanda bintang tidak dihitung.</li>
+                <li>Plot skor ke tiga grafik memakai tabel konversi.</li>
+                <li>Tentukan dimensi yang berada di atas garis tengah grafik. Dimensi tertinggi menjadi <strong>gaya utama</strong>, dimensi tertinggi kedua menjadi <strong>gaya pendukung</strong>.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="note"><p class="code" style="display:inline-block">GRAFIK I</p><p style="margin-top:8px"><strong>Mask</strong> — citra publik. Memakai skor <strong>M</strong>.</p></div>
+          <div class="note"><p class="code" style="display:inline-block">GRAFIK II</p><p style="margin-top:8px"><strong>Core</strong> — perilaku saat tertekan. Memakai skor <strong>L</strong>.</p></div>
+          <div class="note"><p class="code" style="display:inline-block">GRAFIK III</p><p style="margin-top:8px"><strong>Mirror</strong> — gambaran diri. Memakai skor <strong>Change (M − L)</strong>.</p></div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">5.4</span>Contoh Perhitungan</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="grid-2">
+              <div>
+                <div class="tbl-wrap">
+                  <table class="tbl compact disc-table">
+                    <thead><tr><th scope="col">Dimensi</th><th>D</th><th>I</th><th>S</th><th>C</th><th>*</th><th>Total</th></tr></thead>
+                    <tbody id="discBody"></tbody>
+                  </table>
+                </div>
+                <div class="btn-row">
+                  <button class="bevel-btn" type="button" id="discExample">Kembalikan contoh</button>
+                </div>
+                <p style="font-size:13px;color:var(--ink-3);margin-top:8px">Sel M dan L dapat diubah. Change dihitung otomatis.</p>
+              </div>
+              <div>
+                <div class="bars" id="discBars" aria-hidden="true"></div>
+                <div class="result" id="discResult" aria-live="polite"></div>
+                <p style="font-size:12.5px;color:var(--ink-3);margin-top:8px">Batang menunjukkan skor Change mentah. Grafik resmi memakai tabel konversi.</p>
+              </div>
+            </div>
+            <p style="margin-top:14px">Pada contoh, di grafik III <strong>D</strong> berada paling tinggi, disusul <strong>S</strong>. Responden menggambarkan dirinya sebagai pribadi tegas dan berorientasi hasil, tetapi tetap menjaga stabilitas dan ketekunan. Skor <strong>C negatif</strong> menandakan responden kurang menyukai prosedur yang kaku. Kombinasi dimensi tertinggi kemudian dicocokkan dengan pola profil klasik, misalnya pola yang menggabungkan D dan S.</p>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">5.5</span>Interpretasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <p>Perbedaan besar antara <strong>grafik I dan grafik II</strong> menandakan individu sedang menyesuaikan diri dengan tuntutan lingkungan. Misalnya, I tinggi di grafik I tetapi rendah di grafik II menunjukkan individu tampil ramah di depan umum, tetapi kembali lebih tertutup saat tertekan.</p>
+            <p class="callout">DISC menggambarkan <strong>gaya perilaku</strong>, bukan kepribadian menyeluruh atau kemampuan. Karena itu, DISC lebih tepat dipakai untuk pengembangan tim dan komunikasi kerja daripada sebagai satu-satunya dasar keputusan seleksi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 6 HOLLAND ================= -->
+<section class="chapter" id="holland" data-title="06 · Holland RIASEC">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>06</b>Holland Code (RIASEC)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 06 · RIASEC</p>
+          <h2 class="display"><span class="line">Holland</span><span class="line"><span class="hl">Code</span> RIASEC</span></h2>
+        </div>
+        <p class="lede">Enam tipe kepribadian dan lingkungan kerja yang tersusun dalam model heksagonal.</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">6.1</span>Sejarah dan Dasar Teori</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p><strong>John L. Holland</strong> mengemukakan teori tipe kepribadian dan lingkungan kerja sejak 1959 dan menyempurnakannya pada 1997. Holland menyatakan bahwa individu dan lingkungan kerja dapat digolongkan ke dalam <strong>enam tipe</strong>.</p>
+              <p>Individu akan lebih puas dan berprestasi bila bekerja di lingkungan yang tipenya sama dengan tipe dirinya. Keenam tipe tersusun dalam <strong>model heksagonal</strong> dengan urutan R, I, A, S, E, C. Tipe yang bersebelahan memiliki kemiripan tertinggi, sedangkan tipe yang berseberangan paling berbeda (Holland, 1997).</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">6.1</span>Enam Tipe</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="tbl-wrap">
+                <table class="tbl compact">
+                  <thead><tr><th scope="col">Tipe</th><th scope="col">Ciri utama</th><th scope="col">Contoh pekerjaan</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">R (Realistic)</th><td>Praktis, menyukai benda, alat, mesin, dan kerja fisik</td><td>Teknisi, montir, petani</td></tr>
+                    <tr><th scope="row">I (Investigative)</th><td>Analitis, ingin tahu, menyukai pemecahan masalah ilmiah</td><td>Peneliti, analis data, dokter</td></tr>
+                    <tr><th scope="row">A (Artistic)</th><td>Ekspresif, orisinal, menyukai kebebasan berkarya</td><td>Desainer, penulis, musisi</td></tr>
+                    <tr><th scope="row">S (Social)</th><td>Senang menolong, mengajar, dan melayani</td><td>Guru, konselor, perawat</td></tr>
+                    <tr><th scope="row">E (Enterprising)</th><td>Persuasif, ambisius, senang memimpin</td><td>Manajer, pemasar, pengusaha</td></tr>
+                    <tr><th scope="row">C (Conventional)</th><td>Teratur, teliti, menyukai data dan prosedur</td><td>Akuntan, staf administrasi</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">6.2</span>Administrasi Self-Directed Search (SDS) Form R</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <p>Instrumen RIASEC yang paling baku adalah <strong>Self-Directed Search (SDS) Form R</strong>. SDS terdiri atas lima bagian dan memakan waktu <strong>30 sampai 45 menit</strong>.</p>
+            <div class="facts">
+              <div class="fact"><b>①</b><span><strong>Occupational Daydreams</strong> — menulis pekerjaan yang pernah diimpikan</span></div>
+              <div class="fact"><b>66</b><span><strong>Activities</strong> — 11 per tipe, dijawab suka atau tidak suka</span></div>
+              <div class="fact"><b>66</b><span><strong>Competencies</strong> — 11 per tipe, dijawab ya atau tidak</span></div>
+              <div class="fact"><b>84</b><span><strong>Occupations</strong> — 14 per tipe, dijawab tertarik atau tidak</span></div>
+              <div class="fact"><b>2×6</b><span><strong>Self-Estimates</strong> — dua kemampuan per tipe, skala 1 sampai 7</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">6.3</span>Skoring</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <ol class="steps">
+                <li>Hitung jawaban <strong>suka</strong> pada bagian Activities untuk setiap tipe (0 sampai 11).</li>
+                <li>Hitung jawaban <strong>ya</strong> pada bagian Competencies untuk setiap tipe (0 sampai 11).</li>
+                <li>Hitung jawaban <strong>tertarik</strong> pada bagian Occupations untuk setiap tipe (0 sampai 14).</li>
+                <li>Jumlahkan dua nilai Self-Estimates untuk setiap tipe (2 sampai 14).</li>
+                <li>Jumlahkan keempat skor untuk memperoleh skor total setiap tipe. Rentangnya <strong>2 sampai 50</strong>.</li>
+                <li>Ambil tiga tipe dengan skor tertinggi secara berurutan. Ketiga huruf tersebut menjadi <strong>summary code</strong> atau kode Holland responden.</li>
+                <li>Bandingkan kode responden dengan kode pekerjaan dalam <em>Occupations Finder</em> atau kamus kode pekerjaan.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">6.4</span>Contoh dan Interpretasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="pix pix-sky"><div class="pix-in" style="padding:14px"><svg id="hexSvg" class="hex-svg" viewBox="0 0 220 210" role="img" aria-label="Heksagon RIASEC dengan skor responden"></svg></div></div>
+              <div class="calc-grid" id="hexInputs" style="margin-top:14px;grid-template-columns:repeat(6,minmax(0,1fr))"></div>
+              <div class="result" id="hexResult" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">6.4</span>Empat Konsep Penafsiran Holland — contoh kode ISA</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <p>Skor contoh: R 18, I 35, A 22, S 30, E 15, C 20. Kode Holland responden adalah <strong>ISA</strong>.</p>
+            <div class="concepts">
+              <div class="concept"><b>01 KONSISTENSI</b>Kedekatan dua huruf pertama pada heksagon. Huruf I dan S terpisah satu tipe (A), sehingga konsistensinya <strong>sedang</strong>.</div>
+              <div class="concept"><b>02 DIFERENSIASI</b>Selisih skor tertinggi dan terendah. 35 − 15 = 20 menunjukkan profil <strong>cukup terdiferensiasi</strong>.</div>
+              <div class="concept"><b>03 KONGRUENSI</b>Kecocokan kode individu dengan kode lingkungan kerja. Responden ISA cocok dengan pekerjaan seperti <strong>psikolog peneliti atau dosen ilmu sosial</strong>.</div>
+              <div class="concept"><b>04 IDENTITAS</b>Kejelasan tujuan karier individu.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 7 MBTI ================= -->
+<section class="chapter" id="mbti" data-title="07 · MBTI">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>07</b>Myers-Briggs Type Indicator (MBTI)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 07 · MBTI</p>
+          <h2 class="display"><span class="line">Myers-Briggs</span><span class="line"><span class="hl">Type</span> Indicator</span></h2>
+        </div>
+        <p class="lede">Empat dikotomi preferensi berdasarkan teori tipe psikologis Jung, menghasilkan 16 tipe.</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">7.1</span>Sejarah dan Dasar Teori</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p><strong>Katharine Cook Briggs</strong> dan putrinya, <strong>Isabel Briggs Myers</strong>, menyusun MBTI sejak 1940-an berdasarkan teori tipe psikologis <strong>Carl Gustav Jung</strong> (1921). Tujuannya membuat teori Jung dapat dipakai dalam kehidupan sehari-hari.</p>
+              <div class="facts" style="margin:12px 0">
+                <div class="fact"><b>93</b><span>Aitem Form M, untuk menentukan tipe</span></div>
+                <div class="fact"><b>144</b><span>Aitem Form Q, analisis faset (Step II)</span></div>
+              </div>
+              <p>MBTI merupakan instrumen <strong>komersial dengan hak cipta</strong>, sehingga pemakai harus memenuhi kualifikasi penerbit (Quenk, 2009).</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">7.2</span>Aspek yang Diukur</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="tbl-wrap">
+                <table class="tbl compact">
+                  <thead><tr><th scope="col">Dimensi</th><th scope="col">Kutub</th><th scope="col">Isi</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">Arah energi</th><td>E (Extraversion) atau I (Introversion)</td><td>Energi dari dunia luar atau dari dunia batin</td></tr>
+                    <tr><th scope="row">Cara menerima informasi</th><td>S (Sensing) atau N (Intuition)</td><td>Fakta konkret melalui indra atau pola dan kemungkinan</td></tr>
+                    <tr><th scope="row">Cara mengambil keputusan</th><td>T (Thinking) atau F (Feeling)</td><td>Logika objektif atau nilai dan dampak pada orang</td></tr>
+                    <tr><th scope="row">Orientasi terhadap dunia luar</th><td>J (Judging) atau P (Perceiving)</td><td>Terencana dan tuntas atau fleksibel dan terbuka</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p style="margin-top:12px">Kombinasi empat dimensi menghasilkan <strong>16 tipe</strong>, misalnya ISTJ atau ENFP. MBTI memandang setiap kutub sebagai <strong>preferensi, bukan kemampuan</strong>. Tidak ada tipe yang lebih baik dari tipe lain.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">7.3</span>Administrasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p>Form M berisi pilihan paksa berupa pasangan kata dan pertanyaan dengan dua alternatif. Pengerjaan berkisar <strong>15 sampai 25 menit</strong>. Penguji menegaskan bahwa responden menjawab sesuai <strong>dirinya yang alami</strong>, bukan tuntutan pekerjaan atau peran tertentu.</p>
+              <p>MBTI kini lebih banyak diadministrasikan melalui komputer atau platform daring resmi penerbit. Sistem daring menghitung skor secara otomatis dan langsung menyusun laporan.</p>
+              <div class="w98 alert" style="margin-top:12px">
+                <div class="w98-bar"><span class="w98-title">Peringatan</span><span class="w98-btns" aria-hidden="true"><i>×</i></span></div>
+                <div class="w98-body"><svg class="ico ico-lg"><use href="#i-warn"/></svg><p>Tes kepribadian 16 tipe gratis di internet <strong>bukan MBTI resmi</strong> dan tidak memakai metode skoring yang sama.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">7.4</span>Skoring</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <ol class="steps">
+                <li>Setiap jawaban memberi poin pada salah satu kutub dimensi. Form M memakai pembobotan berbasis <strong>Item Response Theory</strong>, sehingga skoring manual memerlukan templat resmi.</li>
+                <li>Jumlahkan poin setiap kutub. Kutub dengan poin lebih besar menjadi preferensi pada dimensi itu.</li>
+                <li>Gabungkan empat huruf preferensi menjadi kode tipe.</li>
+                <li>Hitung <strong>Preference Clarity Index (pci)</strong> untuk setiap dimensi. Pci menunjukkan seberapa konsisten responden memilih satu kutub, bukan seberapa kuat atau terampil ia pada kutub tersebut.</li>
+                <li>Bila poin kedua kutub sama, Form M menetapkan <strong>I, N, F, atau P</strong> sesuai aturan manual.</li>
+              </ol>
+              <div class="pci" aria-label="Kategori pci Form M">
+                <div><b>SAMAR</b>1–5</div>
+                <div style="background:#fff"><b>SEDANG</b>6–15</div>
+                <div style="background:#eefbd6"><b>JELAS</b>16–25</div>
+                <div style="background:var(--lime)"><b>SANGAT JELAS</b>26–30</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">7.5</span>Fungsi Dominan dan Pendukung</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="grid-2">
+              <div>
+                <p>Huruf <strong>J atau P</strong> menunjukkan fungsi yang <strong>diekstraversikan</strong>:</p>
+                <ul class="bullets">
+                  <li>Huruf <strong>J</strong> berarti fungsi penilaian (T atau F) dipakai di dunia luar.</li>
+                  <li>Huruf <strong>P</strong> berarti fungsi persepsi (S atau N) dipakai di dunia luar.</li>
+                  <li>Pada tipe <strong>E</strong>, fungsi yang diekstraversikan menjadi fungsi dominan.</li>
+                  <li>Pada tipe <strong>I</strong>, fungsi dominan justru fungsi yang diintroversikan.</li>
+                </ul>
+                <p style="margin-top:10px">Contohnya <strong>INTJ</strong>. Huruf J membuat T diekstraversikan. Karena tipe ini introvert, fungsi dominannya N yang diintroversikan (<strong>Ni</strong>) dan fungsi pendukungnya T yang diekstraversikan (<strong>Te</strong>).</p>
+              </div>
+              <div class="w98">
+                <div class="w98-bar"><span class="w98-title">Fungsi_Tipe.exe</span><span class="w98-btns" aria-hidden="true"><i>_</i><i>×</i></span></div>
+                <div class="w98-body">
+                  <div class="mbti-pickers" id="mbtiPickers"></div>
+                  <div class="type-out"><span class="big-code" id="mbtiType">INTJ</span><span id="mbtiNote" style="font-size:14px;flex:1;min-width:160px"></span></div>
+                  <div class="fn-cards" aria-live="polite">
+                    <div class="fn"><span>DOMINAN</span><b id="mbtiDom">Ni</b><small id="mbtiDomTxt"></small></div>
+                    <div class="fn"><span>PENDUKUNG</span><b id="mbtiAux">Te</b><small id="mbtiAuxTxt"></small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">7.6</span>Kekuatan dan Kelemahan</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="grid-2">
+              <div class="note" style="box-shadow:none;background:#f1fbd9">
+                <h4 style="margin-top:0">Kekuatan</h4>
+                <ul class="bullets"><li>Bahasa yang positif</li><li>Mudah dipahami</li><li>Berguna untuk pengembangan diri, komunikasi tim, serta konseling karier</li></ul>
+              </div>
+              <div class="note" style="box-shadow:none;background:#fff1ec">
+                <h4 style="margin-top:0">Kelemahan</h4>
+                <ul class="bullets"><li>Membagi skor yang sebenarnya kontinu menjadi dua kategori</li><li>Responden dengan skor dekat batas dapat berganti tipe saat tes ulang</li><li>Validitas prediktif untuk kinerja kerja lemah, sehingga <strong>tidak dianjurkan sebagai alat seleksi karyawan</strong> (Quenk, 2009; Groth-Marnat &amp; Wright, 2016)</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 8 PSI EIS HEXACO ================= -->
+<section class="chapter" id="lain" data-title="08 · PSI, EIS, HEXACO">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>08</b>Inventori Lain: PSI, EIS, dan HEXACO<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 08 · PSI · EIS · HEXACO</p>
+          <h2 class="display"><span class="line">Inventori</span><span class="line"><span class="hl">Lain</span></span></h2>
+        </div>
+        <p class="lede">Kerentanan depresi (PSI), identitas ego (EIS), dan enam faktor kepribadian (HEXACO).</p>
+      </div>
+
+      <div class="stack">
+        <!-- PSI -->
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">8.1</span>Personal Style Inventory (PSI)</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <p>PSI versi <strong>Robins dan Luten</strong> mengukur dua dimensi kepribadian yang berkaitan dengan kerentanan terhadap depresi, yaitu <strong>sociotropy</strong> dan <strong>autonomy</strong>. PSI berisi <strong>60 aitem</strong>.</p>
+            <div class="grid-2" style="margin:14px 0">
+              <div class="note" style="box-shadow:none">
+                <h4 style="margin-top:0">Sociotropy</h4>
+                <p>Ketergantungan sosial dan besarnya investasi pada hubungan positif dengan orang lain.</p>
+                <ul class="chips"><li>Concern about what others think</li><li>Dependency</li><li>Pleasing others</li></ul>
+                <p style="margin-top:10px">Saat depresi cenderung merasa <strong>kehilangan (deprived)</strong>: memikirkan kehilangan hubungan dan mudah menangis.</p>
+              </div>
+              <div class="note" style="box-shadow:none">
+                <h4 style="margin-top:0">Autonomy</h4>
+                <p>Investasi pada kemandirian dan pencapaian pribadi.</p>
+                <ul class="chips"><li>Perfectionism/self-criticism</li><li>Need for control (kebebasan dari kontrol luar)</li><li>Defensive separation</li></ul>
+                <p style="margin-top:10px">Saat depresi cenderung merasa <strong>kalah (defeated)</strong>: menyalahkan diri dan merasa gagal.</p>
+              </div>
+            </div>
+            <h4>Skoring</h4>
+            <p>Responden menilai setiap aitem dengan skala <strong>1 (sangat tidak setuju) sampai 6 (sangat setuju)</strong>. Jumlahkan aitem per subskala, lalu jumlahkan tiga subskala sociotropy dan tiga subskala autonomy untuk memperoleh <strong>dua skor total</strong>. Aitem yang dirumuskan terbalik dibalik skornya sesuai kunci (<strong>7 dikurangi skor jawaban</strong>).</p>
+            <p>Norma pada <strong>50 pasien psikiatrik</strong> dengan gangguan depresi (13 laki-laki, 37 perempuan, rerata usia 44,12 tahun):</p>
+            <div class="facts">
+              <div class="fact"><b>127,65</b><span>Rerata sociotropy (SD 18,36)</span></div>
+              <div class="fact"><b>117,27</b><span>Rerata autonomy (SD 17,29)</span></div>
+              <div class="fact"><b>0,88 / 0,83</b><span>Koefisien alfa sociotropy / autonomy</span></div>
+              <div class="fact"><b>0,80 / 0,76</b><span>Tes ulang (jeda 5–13 minggu) sociotropy / autonomy</span></div>
+            </div>
+            <h4>Reliabilitas dan validitas</h4>
+            <p>PSI menunjukkan validitas konkuren dan prediktif yang baik, karena skornya berkorelasi sesuai prediksi dengan <strong>19 ciri klinis</strong> yang dihipotesiskan.</p>
+          </div>
+        </div>
+
+        <!-- EIS -->
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">8.2</span>Ego Identity Scale (EIS)</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <div class="grid-2">
+              <div>
+                <p>EIS disusun oleh <strong>Tan, Kendis, Fine, dan Porac (1977)</strong> berdasarkan teori perkembangan psikososial Erikson tahap kelima, yaitu <strong>identitas versus kebingungan identitas</strong> pada masa remaja. Identitas ego adalah penerimaan diri dan kesadaran tentang arah pengembangan diri.</p>
+                <p>Materi kelas juga mengaitkan EIS dengan dimensi <strong>eksplorasi dan komitmen</strong> serta empat status identitas Marcia:</p>
+                <ul class="chips lime"><li>Achievement</li><li>Moratorium</li><li>Foreclosure</li><li>Diffusion</li></ul>
+                <h4>Administrasi</h4>
+                <p>EIS berisi <strong>12 pasang pernyataan pilihan paksa (A dan B)</strong>. Satu pernyataan mencerminkan identitas ego, yang lain mencerminkan kebingungan identitas. Responden menyilang A atau B yang paling menggambarkan dirinya. Semua nomor wajib diisi. EIS singkat, objektif, dan mudah dipakai.</p>
+                <h4>Skoring</h4>
+                <p>Beri skor 1 untuk setiap pilihan yang sesuai kunci identitas ego, lalu jumlahkan. Rentang skor <strong>0 sampai 12</strong>. Skor makin tinggi menunjukkan identitas ego makin kuat.</p>
+              </div>
+              <div>
+                <div class="tbl-wrap" style="margin-bottom:14px">
+                  <table class="tbl compact">
+                    <thead><tr><th scope="row">Nomor</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead>
+                    <tbody><tr><th scope="row">Kunci</th><td class="num">A</td><td class="num">B</td><td class="num">B</td><td class="num">A</td><td class="num">B</td><td class="num">B</td><td class="num">B</td><td class="num">A</td><td class="num">B</td><td class="num">B</td><td class="num">A</td><td class="num">A</td></tr></tbody>
+                  </table>
+                </div>
+                <div class="w98">
+                  <div class="w98-bar"><span class="w98-title">Skor_EIS.exe — pilih jawaban responden</span><span class="w98-btns" aria-hidden="true"><i>×</i></span></div>
+                  <div class="w98-body">
+                    <div class="eis-grid" id="eisGrid"></div>
+                    <div class="btn-row"><button class="bevel-btn" type="button" id="eisExample">Isi contoh (skor 8)</button><button class="bevel-btn" type="button" id="eisReset">Kosongkan</button></div>
+                    <div class="result" id="eisResult" aria-live="polite"></div>
+                  </div>
+                </div>
+                <p style="margin-top:12px"><strong>Contoh:</strong> responden yang memilih sesuai kunci pada delapan nomor memperoleh skor 8. Skor ini berada di atas titik tengah (6), sehingga responden cenderung sudah memiliki arah diri yang cukup jelas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HEXACO -->
+        <div class="win">
+          <div class="win-bar"><h3><span class="num">8.3</span>HEXACO Personality Inventory-Revised (HEXACO-PI-R)</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <p><strong>Kibeom Lee dan Michael C. Ashton (2004)</strong> mengembangkan model HEXACO dari studi leksikal lintas bahasa. Model ini menambahkan faktor keenam, <strong>Honesty-Humility</strong>, pada lima faktor kepribadian besar.</p>
+            <div class="cat-grid" style="margin:12px 0">
+              <div class="cat"><span class="code">H</span><strong>Honesty-Humility</strong><small>Faktor keenam tambahan</small></div>
+              <div class="cat"><span class="code">E</span><strong>Emotionality</strong><small>4 faset</small></div>
+              <div class="cat"><span class="code">X</span><strong>eXtraversion</strong><small>4 faset</small></div>
+              <div class="cat"><span class="code">A</span><strong>Agreeableness</strong><small>4 faset</small></div>
+              <div class="cat"><span class="code">C</span><strong>Conscientiousness</strong><small>4 faset</small></div>
+              <div class="cat"><span class="code">O</span><strong>Openness to Experience</strong><small>4 faset</small></div>
+            </div>
+            <p>Setiap faktor memiliki <strong>empat faset</strong>, ditambah satu faset antarfaktor, yaitu <strong>Altruism</strong>.</p>
+            <h4>Administrasi dan skoring</h4>
+            <ul class="bullets">
+              <li>Tersedia dalam versi <strong>200, 100, dan 60 aitem</strong>, dalam bentuk laporan diri maupun laporan pengamat.</li>
+              <li>Responden menilai aitem dengan skala <strong>1 (sangat tidak setuju) sampai 5 (sangat setuju)</strong>.</li>
+              <li>Penguji membalik aitem negatif (<strong>6 dikurangi skor jawaban</strong>), lalu menghitung rerata aitem setiap faset dan faktor. Skor rerata dibandingkan dengan norma.</li>
+              <li>HEXACO bersifat <strong>normatif</strong> dan dapat dipakai gratis untuk penelitian nonkomersial melalui situs resminya. Versi daring dan terkomputerisasi juga tersedia.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 9 ASRI ================= -->
+<section class="chapter" id="asri" data-title="09 · ASRI">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>09</b>Assertiveness Self-Report Inventory (ASRI)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 09 · ASRI</p>
+          <h2 class="display"><span class="line">Assertiveness</span><span class="line"><span class="hl">Self-Report</span> Inventory</span></h2>
+        </div>
+        <p class="lede">25 pernyataan benar-salah untuk mengukur asertivitas pada aspek perilaku dan afektif.</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">9.1</span>Tujuan dan Gambaran</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p><strong>Sharon D. Herzberger, Esther Chan, dan Judith Katz (1984)</strong> menyusun ASRI untuk mengukur asertivitas pada aspek <strong>perilaku dan afektif</strong>. Mereka menilai skala asertivitas sebelumnya, seperti <em>Rathus Assertiveness Schedule</em>, kurang spesifik dan kurang memperhatikan bias keinginan sosial.</p>
+              <p>Asertivitas dipahami sebagai kemampuan mengekspresikan perasaan secara bebas, mempertahankan tujuan pribadi, dan membangun hubungan interpersonal yang memuaskan.</p>
+              <p>ASRI dipakai untuk asesmen klinis, evaluasi pelatihan asertivitas, dan penelitian.</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">9.2</span>Administrasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="facts" style="margin-bottom:14px">
+                <div class="fact"><b>25</b><span>Pernyataan, pilihan Benar (B) atau Salah (S)</span></div>
+                <div class="fact"><b>5–10'</b><span>Waktu pengerjaan</span></div>
+              </div>
+              <p>Responden menilai apakah pernyataan sesuai dengan dirinya. <strong>Separuh aitem dirumuskan searah</strong> asertivitas dan separuh lainnya <strong>berlawanan arah</strong>. Penyusunan ini menekan kecenderungan menjawab seragam (response set).</p>
+              <p>Bila responden merasa situasi dalam aitem tidak pernah dialami, penguji memintanya memilih jawaban yang paling mungkin ia lakukan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">9.3</span>Skoring</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <ol class="steps">
+                <li>Pisahkan aitem searah (asertif) dan aitem berlawanan arah memakai kunci dari Corcoran dan Fischer (2000).</li>
+                <li>Beri skor 1 untuk jawaban <strong>Benar</strong> pada aitem <strong>searah</strong>.</li>
+                <li>Beri skor 1 untuk jawaban <strong>Salah</strong> pada aitem <strong>berlawanan arah</strong>.</li>
+                <li>Jawaban lain mendapat skor 0. Jumlahkan seluruh skor. Rentang skor total <strong>0 sampai 25</strong>.</li>
+                <li>Skor makin tinggi menunjukkan asertivitas makin tinggi. Bandingkan skor dengan rerata kelompok norma atau rerata sampel lapangan.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">9.4</span>Validitas dan Reliabilitas</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="facts">
+                <div class="fact"><b>0,78</b><span>Alfa Cronbach (konsistensi internal)</span></div>
+                <div class="fact"><b>0,81</b><span>Reliabilitas tes ulang</span></div>
+                <div class="fact"><b>0,70 / 0,63</b><span>Korelasi dengan Rathus Assertiveness Schedule pada dua sesi</span></div>
+              </div>
+              <p style="margin-top:14px">Herzberger dkk. (1984) melaporkan konsistensi internal yang memadai. Skor ASRI juga relatif <strong>bebas dari bias keinginan sosial</strong>, sehingga validitas diskriminannya memadai.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 10 ESLI ================= -->
+<section class="chapter" id="esli" data-title="10 · ESLI">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>10</b>Emotional/Social Loneliness Inventory (ESLI)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 10 · ESLI</p>
+          <h2 class="display"><span class="line">Emotional/Social</span><span class="line"><span class="hl">Loneliness</span> Inventory</span></h2>
+        </div>
+        <p class="lede">Membedakan kesepian (subjektif) dari isolasi (keadaan hubungan yang lebih objektif).</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">10.1</span>Tujuan dan Gambaran</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p><strong>Harry Vincenzi dan Fran Grabosky (1987)</strong> menyusun ESLI untuk membedakan <strong>kesepian (loneliness)</strong> dari <strong>isolasi (isolation)</strong>. Dasar teorinya adalah pembedaan <strong>Weiss (1973)</strong> antara kesepian emosional dan kesepian sosial.</p>
+              <ul class="bullets">
+                <li><strong>Kesepian emosional</strong> muncul karena tidak adanya hubungan dekat dan intim, misalnya pasangan atau sahabat.</li>
+                <li><strong>Kesepian sosial</strong> muncul karena tidak adanya jaringan sosial yang lebih luas, misalnya teman, rekan, dan tetangga.</li>
+              </ul>
+              <p style="margin-top:10px">Kesepian bersifat subjektif, sedangkan isolasi menggambarkan keadaan hubungan yang lebih objektif.</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">10.2</span>Administrasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="facts" style="margin-bottom:14px">
+                <div class="fact"><b>15</b><span>Pernyataan, masing-masing dijawab dua kali</span></div>
+                <div class="fact"><b>30</b><span>Respons per responden (skala empat poin)</span></div>
+                <div class="fact"><b>±10'</b><span>Waktu pengerjaan</span></div>
+              </div>
+              <p>Penilaian pertama mengukur <strong>perasaan subjektif (kesepian)</strong>. Penilaian kedua mengukur <strong>keadaan hubungan yang dialami (isolasi)</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">10.3</span>Skoring — Empat Subskala</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="matrix2" role="table" aria-label="Empat subskala ESLI">
+                <div class="h" role="columnheader"></div><div class="h" role="columnheader">EMOSIONAL</div><div class="h" role="columnheader">SOSIAL</div>
+                <div class="h" role="rowheader">KOLOM PERASAAN</div><div class="c" role="cell">Kesepian emosional</div><div class="c" role="cell">Kesepian sosial</div>
+                <div class="h" role="rowheader">KOLOM KEADAAN</div><div role="cell">Isolasi emosional</div><div role="cell">Isolasi sosial</div>
+              </div>
+              <p style="margin-top:12px">Skor subskala diperoleh dengan menjumlahkan respons aitem yang termasuk subskala tersebut. <strong>Skor total kesepian</strong> adalah jumlah kolom perasaan, sedangkan <strong>skor total isolasi</strong> adalah jumlah kolom keadaan.</p>
+              <p>Pembagian aitem ke dimensi emosional dan sosial mengikuti kunci dalam Corcoran dan Fischer (2000). Skor makin tinggi menunjukkan kesepian atau isolasi makin berat.</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">10.4</span>Validitas dan Reliabilitas</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p>Penelitian lanjutan menemukan bahwa kesepian emosional dan kesepian sosial dalam ESLI <strong>saling berkorelasi tinggi</strong>.</p>
+              <div class="fact" style="margin:12px 0"><b>r = 0,715</b><span>Korelasi isolasi sosial dan isolasi emosional pada studi mahasiswa asing di Filipina</span></div>
+              <p>Temuan ini menunjukkan bahwa keempat subskala mengukur konstruk yang berkaitan, tetapi tetap dapat dibedakan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 11 YA-SSI ================= -->
+<section class="chapter" id="yassi" data-title="11 · YA-SSI">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>11</b>Young Adult Social Support Inventory (YA-SSI)<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 11 · YA-SSI</p>
+          <h2 class="display"><span class="line">Young Adult</span><span class="line"><span class="hl">Social Support</span></span></h2>
+        </div>
+        <p class="lede">Dukungan sosial yang dipersepsikan oleh dewasa muda, terutama mahasiswa baru. 54 aitem, 11 faktor.</p>
+      </div>
+
+      <div class="stack">
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">11.1</span>Tujuan dan Gambaran</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p><strong>Hamilton I. McCubbin, Joan M. Patterson, dan Janet Grochowski</strong> menyusun YA-SSI pada 1984 dan merevisinya pada 1991. YA-SSI mengukur dukungan sosial yang dipersepsikan oleh dewasa muda, terutama mahasiswa baru.</p>
+              <p>Sumber dukungan mencakup:</p>
+              <ul class="chips"><li>Keluarga</li><li>Teman</li><li>Dosen</li><li>Kelompok keagamaan</li><li>Lembaga di sekitar responden</li></ul>
+              <p style="margin-top:10px">YA-SSI berisi <strong>54 aitem dengan 11 faktor</strong>, tetapi dapat dipakai sebagai ukuran tunggal dukungan sosial melalui skor total.</p>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">11.2</span>Administrasi</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <div class="facts" style="margin-bottom:14px">
+                <div class="fact"><b>54</b><span>Aitem</span></div>
+                <div class="fact"><b>15–20'</b><span>Waktu pengerjaan</span></div>
+              </div>
+              <p>Responden menandai sumber dukungan yang ia miliki atau gunakan, lalu menilai tingkat kepuasan terhadap dukungan tersebut.</p>
+              <p>Penguji memastikan responden memahami bahwa yang dinilai adalah dukungan yang <strong>benar-benar ia terima</strong>, bukan dukungan yang seharusnya ia terima.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">11.3</span>Skoring</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <ol class="steps">
+                <li><strong>Dua belas aitem pertama tidak diberi skor.</strong> Aitem ini berfungsi sebagai informasi pengantar tentang jaringan sosial responden.</li>
+                <li>Skor aitem sisanya sesuai kunci dan skala respons dalam lembar YA-SSI pada Corcoran dan Fischer (2000).</li>
+                <li>Jumlahkan skor aitem per faktor untuk analisis rinci, atau jumlahkan seluruh aitem yang diskor untuk memperoleh skor total.</li>
+                <li>Skor makin tinggi menunjukkan dukungan sosial yang dipersepsikan makin besar.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="win">
+            <div class="win-bar"><h3><span class="num">11.4</span>Validitas dan Reliabilitas</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <div class="win-body">
+              <p>YA-SSI dikembangkan dan diuji pada <strong>361 mahasiswa</strong>. Instrumen ini menunjukkan konsistensi internal yang sangat baik dan validitas prediktif yang baik.</p>
+              <p>Penelitian yang memakai YA-SSI bersama <em>Beck Depression Inventory</em> dan <em>Self-Efficacy Scale</em> menunjukkan bahwa dukungan sosial termasuk <strong>prediktor depresi</strong> pada mahasiswa.</p>
+              <p>YA-SSI belum banyak diuji pada sampel di luar mahasiswa, tetapi memiliki validitas tampang untuk dewasa muda pada umumnya.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w98 alert">
+          <div class="w98-bar"><h3>Catatan Verifikasi</h3><span class="w98-btns" aria-hidden="true"><i>×</i></span></div>
+          <div class="w98-body">
+            <svg class="ico ico-lg"><use href="#i-warn"/></svg>
+            <p>Kunci arah aitem ASRI, pembagian aitem ESLI ke subskala emosional dan sosial, serta skala respons dan kunci faktor YA-SSI tidak tersedia secara terbuka dan berbeda antarterjemahan. Untuk tugas lapangan (pertemuan 3 sampai 14), cocokkan langkah skoring di atas dengan lembar instrumen asli dalam <strong>Corcoran dan Fischer (2000, Vol. 2)</strong> yang menjadi pustaka utama RPS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 12 DATA LAPANGAN ================= -->
+<section class="chapter" id="lapangan" data-title="12 · Pengolahan Data Lapangan">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>12</b>Pengolahan Data Lapangan untuk Tugas ASRI, ESLI, dan YA-SSI<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 12 · TUGAS</p>
+          <h2 class="display"><span class="line">Pengolahan</span><span class="line"><span class="hl">Data</span> Lapangan</span></h2>
+        </div>
+        <p class="lede">RPS meminta mahasiswa menerjemahkan instrumen, menyebarkannya, lalu menghitung reliabilitas dan validitas.</p>
+      </div>
+      <div class="grid-2">
+        <div class="win span-all">
+          <div class="win-bar"><h3><span class="num">✓</span>Daftar periksa untuk ASRI, ESLI, dan YA-SSI</h3><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="win-body">
+            <ol class="checklist" id="checklist">
+              <li><label><input type="checkbox" data-k="c1"><span>Lakukan <strong>penerjemahan maju</strong> ke bahasa Indonesia, lalu <strong>terjemahan balik</strong> ke bahasa Inggris oleh penerjemah lain. Bandingkan hasilnya untuk menjaga kesetaraan makna.</span></label></li>
+              <li><label><input type="checkbox" data-k="c2"><span>Uji <strong>keterbacaan</strong> pada 3 sampai 5 responden sebelum penyebaran luas.</span></label></li>
+              <li><label><input type="checkbox" data-k="c3"><span>Sebarkan instrumen pada sampel yang sesuai target. Sampel minimal yang lazim untuk analisis aitem adalah <strong>30 responden</strong>.</span></label></li>
+              <li><label><input type="checkbox" data-k="c4"><span>Skor setiap responden sesuai kunci. <strong>Balik aitem negatif</strong> sebelum dianalisis.</span></label></li>
+              <li><label><input type="checkbox" data-k="c5"><span>Hitung <strong>daya diskriminasi aitem</strong> dengan korelasi aitem-total terkoreksi. Aitem dengan koefisien <strong>0,30 atau lebih</strong> umumnya dipertahankan.</span></label></li>
+              <li><label><input type="checkbox" data-k="c6"><span>Hitung <strong>reliabilitas</strong>. Gunakan <strong>KR-20</strong> untuk aitem dikotomis (ASRI) dan <strong>alfa Cronbach</strong> untuk aitem berjenjang (ESLI, YA-SSI). Koefisien <strong>0,70 atau lebih</strong> tergolong memadai.</span></label></li>
+              <li><label><input type="checkbox" data-k="c7"><span>Uji <strong>validitas konstruk</strong> dengan mengorelasikan skor total dengan alat ukur lain yang konstruknya serupa (validitas konvergen) atau berlawanan (validitas diskriminan).</span></label></li>
+              <li><label><input type="checkbox" data-k="c8"><span>Susun <strong>norma sampel</strong> dengan menghitung rerata dan simpangan baku, lalu bagi kategori rendah, sedang, dan tinggi berdasarkan <strong>rerata ± satu simpangan baku</strong>.</span></label></li>
+            </ol>
+            <div class="loader" style="max-width:none;margin-top:14px">
+              <div class="loader-label"><span>PROGRES TUGAS</span><span id="checkPct">0/8</span></div>
+              <div class="prog"><div class="prog-fill" id="checkProg" style="transition:width .3s"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="note">
+          <h4 style="margin:0 0 8px;font-family:var(--f-display)">Kategori norma (rerata ± 1 SD)</h4>
+          <div class="scale" aria-hidden="true">
+            <div style="flex:1;background:#ffe3dc">Rendah<br>&lt; M − 1SD</div>
+            <div style="flex:2;background:#fff">Sedang<br>M ± 1SD</div>
+            <div style="flex:1;background:var(--lime)">Tinggi<br>&gt; M + 1SD</div>
+          </div>
+          <p class="sr-only">Rendah di bawah rerata dikurangi satu simpangan baku, sedang di antara, tinggi di atas rerata ditambah satu simpangan baku.</p>
+        </div>
+        <div class="note">
+          <h4 style="margin:0 0 8px;font-family:var(--f-display)">Pilih koefisien reliabilitas</h4>
+          <ul class="bullets">
+            <li><strong>ASRI</strong> (benar/salah, dikotomis) → KR-20</li>
+            <li><strong>ESLI, YA-SSI</strong> (berjenjang) → alfa Cronbach</li>
+            <li>Ambang memadai: ≥ 0,70 · daya diskriminasi aitem: ≥ 0,30</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BAB 13 RINGKASAN ================= -->
+<section class="chapter" id="ringkasan" data-title="13 · Ringkasan Perbandingan">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>13</b>Ringkasan Perbandingan Alat Tes<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bab"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bab"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bab"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">BAB 13 · RINGKASAN</p>
+          <h2 class="display"><span class="line">Ringkasan</span><span class="line"><span class="hl">Perbandingan</span></span></h2>
+        </div>
+        <p class="lede">Konstruk, format, jumlah aitem, dan rentang skor utama setiap alat tes dalam satu tabel.</p>
+      </div>
+      <div class="win">
+        <div class="win-bar">
+          <h3><span class="num">13</span>Tabel ringkasan</h3>
+          <label for="sumFilter" class="sr-only">Saring alat tes</label>
+          <select id="sumFilter" class="sel" style="font-size:13px;padding:3px 6px">
+            <option value="all">Semua format</option>
+            <option value="ipsatif">Ipsatif / pilihan paksa</option>
+            <option value="normatif">Normatif / skala</option>
+          </select>
+        </div>
+        <div class="win-body">
+          <div class="tbl-wrap">
+            <table class="tbl" id="sumTable">
+              <thead><tr><th scope="col">Alat tes</th><th scope="col">Konstruk</th><th scope="col">Format</th><th scope="col">Jumlah aitem</th><th scope="col">Rentang skor utama</th></tr></thead>
+              <tbody>
+                <tr data-f="ipsatif"><th scope="row">RMIB</th><td>Minat jabatan (12 kategori)</td><td>Ipsatif, peringkat</td><td>9 daftar × 12</td><td>9 sampai 108 per kategori, total 702</td></tr>
+                <tr data-f="ipsatif"><th scope="row">EPPS</th><td>15 kebutuhan Murray</td><td>Ipsatif, pilihan paksa</td><td>225 pasang</td><td>0 sampai 28 per kebutuhan, total 210</td></tr>
+                <tr data-f="ipsatif"><th scope="row">PAPI-I</th><td>10 needs dan 10 roles kerja</td><td>Ipsatif, pilihan paksa</td><td>90 pasang</td><td>0 sampai 9 per aspek, total 90</td></tr>
+                <tr data-f="normatif"><th scope="row">PAPI-N</th><td>20 aspek PAPI</td><td>Normatif, skala 5 poin</td><td>126</td><td>Skor per aspek dibandingkan norma</td></tr>
+                <tr data-f="ipsatif"><th scope="row">DISC</th><td>Gaya perilaku D, I, S, C</td><td>Ipsatif, Most dan Least</td><td>24 kelompok</td><td>M dan L masing-masing total 24</td></tr>
+                <tr data-f="normatif"><th scope="row">SDS Holland</th><td>Enam tipe RIASEC</td><td>Normatif, ceklis dan rating</td><td>228 respons</td><td>2 sampai 50 per tipe</td></tr>
+                <tr data-f="ipsatif"><th scope="row">MBTI Form M</th><td>Empat dikotomi Jung</td><td>Pilihan paksa</td><td>93</td><td>Tipe 4 huruf dan pci</td></tr>
+                <tr data-f="normatif"><th scope="row">PSI</th><td>Sociotropy dan autonomy</td><td>Likert 1 sampai 6</td><td>60</td><td>Dua skor total</td></tr>
+                <tr data-f="ipsatif"><th scope="row">EIS</th><td>Identitas ego</td><td>Ipsatif, pilihan paksa</td><td>12 pasang</td><td>0 sampai 12</td></tr>
+                <tr data-f="normatif"><th scope="row">HEXACO-PI-R</th><td>Enam faktor kepribadian</td><td>Likert 1 sampai 5</td><td>60, 100, 200</td><td>Rerata 1 sampai 5</td></tr>
+                <tr data-f="normatif"><th scope="row">ASRI</th><td>Asertivitas</td><td>Benar atau salah</td><td>25</td><td>0 sampai 25</td></tr>
+                <tr data-f="normatif"><th scope="row">ESLI</th><td>Kesepian dan isolasi</td><td>Skala 4 poin, dua kolom</td><td>15 (30 respons)</td><td>Empat subskala</td></tr>
+                <tr data-f="normatif"><th scope="row">YA-SSI</th><td>Dukungan sosial dewasa muda</td><td>Ceklis dan rating kepuasan</td><td>54</td><td>Skor total dan 11 faktor</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PUSTAKA ================= -->
+<section class="chapter" id="pustaka" data-title="Daftar Pustaka">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>REF</b>Daftar Pustaka<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bagian"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bagian"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bagian"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">REFERENSI</p>
+          <h2 class="display"><span class="line">Daftar</span><span class="line"><span class="hl">Pustaka</span></span></h2>
+        </div>
+      </div>
+      <div class="w98">
+        <div class="w98-bar"><span class="w98-title">Daftar_Pustaka.txt — Notepad</span><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="w98-body white">
+          <ul class="refs">
+            <li>Carless, S. A., &amp; Fallon, B. (2002). The relationship between Rothwell-Miller interest categories and abilities. <em>Australian Journal of Career Development, 11</em>(1), 27–31. <a href="https://doi.org/10.1177/103841620201100107" target="_blank" rel="noopener">https://doi.org/10.1177/103841620201100107</a></li>
+            <li>Caputo, D. V., Plapp, J. M., Hanf, C., &amp; Anzel, A. S. (1965). The validity of the Edwards Personal Preference Schedule (EPPS) employing projective and behavioral criteria. <em>Educational and Psychological Measurement, 25</em>(3), 829–848. <a href="https://doi.org/10.1177/001316446502500313" target="_blank" rel="noopener">https://doi.org/10.1177/001316446502500313</a></li>
+            <li>Corcoran, K., &amp; Fischer, J. (2000). <em>Measures for clinical practice: A sourcebook</em> (3rd ed., Vol. 2: Adults). The Free Press.</li>
+            <li>Davis, H., Brown, D., Owen, C., &amp; Garner, T. (2011). <em>DISC encyclopedia: Behavioral flexibility is the key to your success</em>. Indaba Press.</li>
+            <li>Domino, G., &amp; Domino, M. L. (2006). <em>Psychological testing: An introduction</em> (2nd ed.). Cambridge University Press.</li>
+            <li>Edwards, A. L. (1959). <em>Edwards Personal Preference Schedule manual</em> (Rev. ed.). The Psychological Corporation.</li>
+            <li>Goldstein, G., Allen, D. N., &amp; DeLuca, J. (2019). <em>Handbook of psychological assessment</em> (3rd ed.). Elsevier.</li>
+            <li>Gregory, R. J. (2011). <em>Tes psikologi: Sejarah, prinsip, dan aplikasinya</em> (Ed. ke-6, Jilid 1 dan 2). Erlangga.</li>
+            <li>Groth-Marnat, G., &amp; Wright, A. J. (2016). <em>Handbook of psychological assessment</em> (6th ed.). John Wiley &amp; Sons.</li>
+            <li>Herzberger, S. D., Chan, E., &amp; Katz, J. (1984). The development of an assertiveness self-report inventory. <em>Journal of Personality Assessment, 48</em>(3), 317–323. <a href="https://doi.org/10.1207/s15327752jpa4803_16" target="_blank" rel="noopener">https://doi.org/10.1207/s15327752jpa4803_16</a></li>
+            <li>Himpunan Psikologi Indonesia. (2010). <em>Kode etik psikologi Indonesia</em>. Pengurus Pusat HIMPSI.</li>
+            <li>Holland, J. L. (1997). <em>Making vocational choices: A theory of vocational personalities and work environments</em> (3rd ed.). Psychological Assessment Resources.</li>
+            <li>Lee, K., &amp; Ashton, M. C. (2004). Psychometric properties of the HEXACO Personality Inventory. <em>Multivariate Behavioral Research, 39</em>(2), 329–358.</li>
+            <li>Marston, W. M. (1928). <em>Emotions of normal people</em>. Kegan Paul, Trench, Trubner &amp; Co.</li>
+            <li>McCubbin, H. I., Patterson, J., &amp; Grochowski, J. (1996). Young Adult Social Support Inventory (YA-SSI). Dalam H. I. McCubbin, A. I. Thompson, &amp; M. A. McCubbin (Ed.), <em>Family assessment: Resiliency, coping and adaptation</em> (hlm. 391–403). University of Wisconsin.</li>
+            <li>Miller, K. M., Tyler, B., &amp; Rothwell, J. W. (1994). <em>Rothwell-Miller Interest Blank (Revised): Manual</em>. Miller &amp; Tyler.</li>
+            <li>Murray, H. A. (1938). <em>Explorations in personality</em>. Oxford University Press.</li>
+            <li>Quenk, N. L. (2009). <em>Essentials of Myers-Briggs Type Indicator assessment</em> (2nd ed.). John Wiley &amp; Sons.</li>
+            <li>Sanz, J., Gil, F., Barrasa, A., &amp; Garcia-Vera, M. P. (2006). Self-assessment of needs and behavior patterns at work: Psychometric properties of the Personality and Preference Inventory-Normative (PAPI-N). <em>Personality and Individual Differences, 41</em>(5), 837–847. <a href="https://doi.org/10.1016/j.paid.2006.03.019" target="_blank" rel="noopener">https://doi.org/10.1016/j.paid.2006.03.019</a></li>
+            <li>Tan, A. L., Kendis, R. J., Fine, J. T., &amp; Porac, J. (1977). A short measure of Eriksonian ego identity. <em>Journal of Personality Assessment, 41</em>(3), 279–284.</li>
+            <li>Urbina, S. (2004). <em>Essentials of psychological testing</em>. John Wiley &amp; Sons.</li>
+            <li>Vincenzi, H., &amp; Grabosky, F. (1987). Measuring the emotional/social aspects of loneliness and isolation. <em>Journal of Social Behavior and Personality, 2</em>(2), 257–270.</li>
+            <li>Weiss, R. S. (1973). <em>Loneliness: The experience of emotional and social isolation</em>. MIT Press.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KUIS ================= -->
+<section class="chapter" id="kuis" data-title="Kuis Latihan">
+  <div class="wrap">
+    <div class="deckbar">
+      <p class="deckbar-title"><b>EXE</b>Kuis Latihan — Uji Pemahaman<span class="min-note">[diminimalkan]</span></p>
+      <div class="ctrls">
+        <button class="ctrl" data-act="min" aria-label="Minimalkan bagian"><svg><use href="#i-min"/></svg></button>
+        <button class="ctrl" data-act="max" aria-label="Pulihkan bagian"><svg><use href="#i-max"/></svg></button>
+        <button class="ctrl" data-act="close" aria-label="Tutup bagian"><svg><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <div class="slide-head">
+        <div>
+          <p class="kicker">LATIHAN</p>
+          <h2 class="display"><span class="line">Uji</span><span class="line"><span class="hl">Pemahaman</span></span></h2>
+        </div>
+        <p class="lede">12 soal singkat dari materi di atas. Pilih jawaban, lalu tekan Periksa.</p>
+      </div>
+      <div class="w98">
+        <div class="w98-bar"><span class="w98-title">Kuis.exe</span><span class="w98-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span></div>
+        <div class="w98-body">
+          <form class="quiz" id="quiz"></form>
+          <div class="btn-row" style="align-items:center">
+            <button class="bevel-btn" type="button" id="quizCheck">Periksa jawaban</button>
+            <button class="bevel-btn" type="button" id="quizReset">Ulangi</button>
+            <span class="score-box" id="quizScore" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="note">Materi Inventori (IT-051255) · Rumpun Psikodiagnostika · Semester 5 — disusun mengikuti Rencana Pembelajaran Semester (RPS) Fakultas Psikologi Universitas Gunadarma, revisi September 2023.</p>
+  </div>
+</footer>
+</main>
+
+<!-- ============ TASKBAR ============ -->
+<nav class="taskbar" aria-label="Navigasi materi">
+  <button class="bevel-btn start" type="button" id="startBtn" aria-expanded="false" aria-controls="startMenu"><svg><use href="#i-psi"/></svg>Start</button>
+  <a class="bevel-btn task-current" href="#beranda" id="taskCurrent"><svg><use href="#i-folder"/></svg><span id="taskTitle">Beranda</span></a>
+  <div class="tray" aria-hidden="true"><span class="mini-prog"><i id="scrollProg"></i></span><span id="clock">00:00</span></div>
+</nav>
+<div class="start-menu" id="startMenu" hidden>
+  <div class="sm-side" aria-hidden="true">Inventori <em>98</em></div>
+  <ul class="sm-list" id="smList"></ul>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "inventori-web",
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\grega\\AppData\\Local\\Temp\\claude\\E--SMT-5-Inventori-web\\71dcb360-1a7f-4196-91b8-8efc3bed10ba\\scratchpad\\serve.ps1"],
+      "port": 5178
+    }
+  ]
+}
