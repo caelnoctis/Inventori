@@ -4,8 +4,14 @@
     {
       "name": "inventori-web",
       "runtimeExecutable": "powershell.exe",
-      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\grega\\AppData\\Local\\Temp\\claude\\E--SMT-5-Inventori-web\\71dcb360-1a7f-4196-91b8-8efc3bed10ba\\scratchpad\\serve.ps1"],
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\grega\\AppData\\Local\\Temp\\claude\\8adea5cffd09e1b4\\71dcb360-1a7f-4196-91b8-8efc3bed10ba\\scratchpad\\serve.ps1", "-Root", "E:\\SMT 5\\Inventori web", "-Port", "5178"],
       "port": 5178
+    },
+    {
+      "name": "materi-tools",
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\grega\\AppData\\Local\\Temp\\claude\\8adea5cffd09e1b4\\71dcb360-1a7f-4196-91b8-8efc3bed10ba\\scratchpad\\serve.ps1", "-Root", "E:\\SMT 5\\Inventori materi", "-Port", "5179", "-ToolDir", "C:\\Users\\grega\\AppData\\Local\\Temp\\claude\\8adea5cffd09e1b4\\71dcb360-1a7f-4196-91b8-8efc3bed10ba\\scratchpad\\tools", "-SaveDir", "C:\\Users\\grega\\AppData\\Local\\Temp\\claude\\8adea5cffd09e1b4\\71dcb360-1a7f-4196-91b8-8efc3bed10ba\\scratchpad\\pdf"],
+      "port": 5179
     }
   ]
 }
